@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Integrador</title>
+</head>
+<body>  <!-- de aca se empieza a ver -->
+
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Proyecto Integrador</h1>  <!-- titulo -->
+        <p>Descripción breve del proyecto integrador.</p>  <!-- etiqueta paragraph -->
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>  <!-- href: dirección o URL a la que debe llevar el enlace -->
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de inicio -->
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenidos a nuestro Proyecto Integrador. Aquí encontrarás la información sobre nuestros objetivos y metas.</p>
+        </section>
+
+        <!-- Sección sobre nosotros -->
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Descripción de la historia del equipo y los miembros que lo componen.</p>
+            <h2>Nuestra oficina</h2>
+            <img src='ofi.jpg' alt="ofi">
+        </section>
+
+        <!-- Sección de servicios -->
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Descripción de los servicios que ofrecemos como parte de este proyecto.</p>
+        </section>
+        <section id="form">
+            <form action='https://formspree.io/f/movqanjo' method="POST">
+                <!-- Campo para el nombre -->
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+              
+                <!-- Campo para el correo electrónico -->
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <!-- Campo para el mensaje -->
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+              
+                <!-- Botón de enviar -->
+                <button type="submit">Enviar</button>
+              </form>
+              
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Proyecto Integrador. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
