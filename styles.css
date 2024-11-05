@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* globales -> * = todo */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #222;
+    font-weight: bold;
+}
+
+
+p {
+    margin-bottom: 1em;
+}
+
+/* estilos header*/
+
+header {
+    background-color: #babab8;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 0.9em; }
+
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+nav {
+    background: linear-gradient(to right, #f0f0f0, #d3d3d3);  /* Gradiente de gris claro */
+    padding: 1em 0;  /* Espacio arriba y abajo del contenido */
+}
+
+nav ul li {
+    margin-right: 1em;           /* Añade espacio entre los elementos */
+}
+
+nav ul li a:hover {
+    color: #007BFF;              /* Cambia el color al pasar el cursor */
+}
+
+.p-header { 
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+            color:rgb(0, 0, 0);
+            font-weight: bold;
+            padding: 1em ;}
+
+            nav ul li a {
+                color: #0f0ffe;
+                text-decoration: none;
+            }
+
+/* Estilos de formularios */
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input[type="email"],
+input[type="text"]
+ {
+    width: 33%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea { 
+    width: 50%;
+    height: 150px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* Hace que el botón esté en una nueva línea */
+}
+
+button:hover {
+    background-color: #0056b3;
+    
+}
+
+#form-sec { background: linear-gradient(to right, #f0f0f0, #d3d3d3);
+             padding: 1.5em;
+             font-weight: bold;
+    }
+
+#form{ padding-top: 2em;
+        }

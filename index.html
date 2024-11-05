@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Integrador</title>
+    <title id="title">Proyecto Integrador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='styles.css'>
+
 </head>
-<body>  <!-- de aca se empieza a ver -->
+<body class="body">  <!-- de aca se empieza a ver -->
 
     <!-- Encabezado de la página -->
     <header>
         <h1>Proyecto Integrador</h1>  <!-- titulo -->
-        <p>Descripción breve del proyecto integrador.</p>  <!-- etiqueta paragraph -->
+        <p class="p-header">Pre-Entrega proyecto integrador que tiene como objetivo el desarrollo de una pagina Web que simula ser un E-commerce, debe incuir un formulario de contacto, descripción de los servicios que ofrece, imgs y mas!</p>  <!-- etiqueta paragraph -->
     </header>
 
     <!-- Menú de navegación -->
@@ -19,7 +24,9 @@
             <li><a href="#inicio">Inicio</a></li>  <!-- href: dirección o URL a la que debe llevar el enlace -->
             <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#form">Contacto</a></li>
+            <li><a href="#oficina">Nuestras Oficinas</a></li>
+            <li><a href="#personal">Nuestro Personal</a></li>
         </ul>
     </nav>
 
@@ -35,8 +42,16 @@
         <section id="sobre-nosotros">
             <h2>Sobre Nosotros</h2>
             <p>Descripción de la historia del equipo y los miembros que lo componen.</p>
+        </section>
+
+        <section id="oficina"></section>  
             <h2>Nuestra oficina</h2>
-            <img src='ofi.jpg' alt="ofi">
+            <img src='./imgs/ofi.jpg' alt="ofi">
+        </section>
+
+        <section id="personal"></section>  
+            <h2>Nuestro Personal</h2>
+            <img src='./imgs/grupo-persona.avif' alt="personal">
         </section>
 
         <!-- Sección de servicios -->
@@ -44,8 +59,10 @@
             <h2>Servicios</h2>
             <p>Descripción de los servicios que ofrecemos como parte de este proyecto.</p>
         </section>
-        <section id="form">
-            <form action='https://formspree.io/f/movqanjo' method="POST">
+
+        <section id="form-sec">
+            ¡Contactanos y cambia tu forma de ver el mundo laboral!
+            <form id="form" action='https://formspree.io/f/movqanjo' method="POST">
                 <!-- Campo para el nombre -->
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
