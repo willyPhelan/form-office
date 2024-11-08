@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href='styles.css'>
 
 </head>
@@ -23,10 +25,11 @@
         <ul>
             <li><a href="#inicio">Inicio</a></li>  <!-- href: dirección o URL a la que debe llevar el enlace -->
             <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#productos">Productos</a></li>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#form">Contacto</a></li>
             <li><a href="#oficina">Nuestras Oficinas</a></li>
             <li><a href="#personal">Nuestro Personal</a></li>
+            <li><a href="#form">Contacto</a></li>
         </ul>
     </nav>
 
@@ -41,23 +44,104 @@
         <!-- Sección sobre nosotros -->
         <section id="sobre-nosotros">
             <h2>Sobre Nosotros</h2>
-            <p>Descripción de la historia del equipo y los miembros que lo componen.</p>
+            <p>
+                Somos una empresa especializada en soluciones completas para e-commerce, ofreciendo paquetes innovadores que cubren desde la integración de pasarelas de pago y gestión de envíos, hasta la administración total de tiendas online. Además, brindamos un servicio de asesoramiento personalizado para ayudar a nuestros clientes a optimizar su presencia digital y maximizar sus ventas. Con un equipo experto en comercio electrónico y tecnología, nos dedicamos a transformar tu negocio y facilitarte el camino hacia el éxito en el competitivo mundo online.</p>
         </section>
 
-        <section id="oficina"></section>  
-            <h2>Nuestra oficina</h2>
-            <img src='./imgs/ofi.jpg' alt="ofi">
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="productos-container">
+                <div class="card">
+                    <img src="imgs/e-commerce.png" alt="Producto 1">
+                    <h3>Paquete Funcionalidades Web</h3>
+                    <p>Un paquete web que permite a los usuarios integrar pasarelas de pago, añadir seguridad con encriptación SSL, soportar múltiples monedas, configurar notificaciones y gestionar pagos recurrentes fácilmente.</p>
+                </div>
+                <div class="card">
+                    <img src="imgs/estrategias.png" alt="Producto 2">
+                    <h3>Gestiona tus envíos con nosotros</h3>
+                    <p>Un paquete que facilita la gestión de envíos en e-commerce, integrando proveedores logísticos, seguimiento en tiempo real, tarifas automáticas y opciones de envío flexible, optimizando la experiencia del cliente.</p>
+                </div>
+                <div class="card">
+                    <img src="imgs/Pyme.jpg" alt="Producto 2">
+                    <h3>Paquete Gestión Online</h3>
+                    <p>Un paquete integral para gestionar e-commerce online: incluye administración de inventario, procesamiento de pagos, gestión de pedidos, análisis de ventas, soporte de múltiples canales y herramientas de marketing.</p>
+                </div>
+                
+            </div>
         </section>
 
-        <section id="personal"></section>  
-            <h2>Nuestro Personal</h2>
-            <img src='./imgs/grupo-persona.avif' alt="personal">
-        </section>
-
-        <!-- Sección de servicios -->
-        <section id="servicios">
+          <!-- Sección de servicios -->
+          <section id="servicios">
             <h2>Servicios</h2>
-            <p>Descripción de los servicios que ofrecemos como parte de este proyecto.</p>
+            <p>Ofrecemos un servicio de asesoramiento online personalizado para tu e-commerce, diseñado para optimizar cada aspecto de tu negocio digital. Nuestros expertos analizan tu tienda, desarrollan estrategias a medida y te guían en la implementación de mejoras en áreas clave como UX/UI, marketing digital, gestión de inventarios y procesos de pago. Te ayudamos a aumentar la conversión, retener clientes y expandir tu presencia en el mercado online, adaptándonos a tus objetivos y necesidades específicas para asegurar tu éxito.</p>
+        </section>
+
+        
+
+        <section id="oficina">
+            <h2>Nuestras Oficinas</h2>
+            <div id="carouselOficinas" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./imgs/ofi.jpg" class="d-block carousel-img" alt="Oficina 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imgs/ofic.jpg" class="d-block carousel-img" alt="Oficina 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imgs/oficinamoderna2.jpg" class="d-block carousel-img" alt="Oficina 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselOficinas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselOficinas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+        
+        </section>
+        
+
+        <section id="personal">
+            <h2>Nuestro Personal</h2>
+            <div id="carouselPersonal" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./imgs/grupo-persona.avif" class="d-block w-100" alt="Personal 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imgs/perr.avif" class="d-block w-100" alt="Personal 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imgs/tip.jpeg" class="d-block w-100" alt="Personal 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPersonal" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPersonal" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+        
+
+      
+        <section id="resenas">
+            <h2>Reseñas</h2>
+            <div class="resenas-grid">
+                <div class="reseña">Manuel Garcia: Excelente servicio.</div>
+                <div class="reseña">Estefania Lascano: Muy satisfecha con el producto.</div>
+                <div class="reseña">Maria Desbot: Recomendado al 100%.</div>
+                <div class="reseña">Alfonso Nader: Atención al cliente increíble.</div>
+                <!-- Más reseñas -->
+            </div>
         </section>
 
         <section id="form-sec">

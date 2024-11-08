@@ -33,6 +33,70 @@ header {
     text-align: center;
 }
 
+/* inicio */
+
+#inicio {
+    padding: 2em;
+    background-color: #f9f9f9; /* Un gris más claro */
+    text-align: center;
+    border-bottom: 3px solid #ccc;
+}
+
+#inicio h2 {
+    color: #0056b3;
+    font-family: 'Itim', cursive; /* Diferente tipografía */
+    margin-bottom: 1em;
+}
+
+#inicio p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* sobre nosotros */
+
+#sobre-nosotros {
+    padding: 2em;
+    background-color: #e6f7ff; /* Azul claro */
+    border-left: 5px solid #007BFF; /* Barra decorativa */
+}
+
+#sobre-nosotros h2 {
+    color: #004085;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 0.5em;
+}
+
+#sobre-nosotros p {
+    font-size: 1.05em;
+    color: #333;
+    text-align: justify;
+}
+
+/* Servicios */
+#servicios {
+    padding: 2em;
+    background: linear-gradient(135deg, #f0f0f0, #d3e0ea);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007BFF;
+}
+
+#servicios h2 {
+    color: #004085;
+    font-family: 'Oswald', sans-serif;
+    
+    margin-bottom: 1em;
+}
+
+#servicios p {
+    color: #444;
+    font-size: 1.15em;
+    margin-top: 1em;
+    line-height: 1.6;
+}
+
+
 /* Footer */
 
 footer {
@@ -119,7 +183,95 @@ button:hover {
 #form-sec { background: linear-gradient(to right, #f0f0f0, #d3d3d3);
              padding: 1.5em;
              font-weight: bold;
+             color: #004085;
     }
 
 #form{ padding-top: 2em;
         }
+
+        @media (max-width: 768px) {
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            #form-sec {
+                padding: 1em;
+            }
+        
+            button {
+                width: 100%;
+            }
+        }
+        
+
+        /*GRID*/
+
+        #productos {
+            padding: 2em;
+            background-color: #eaeaea;
+        }
+        
+        .productos-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5em;
+            justify-content: space-around;
+        }
+        
+        .card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 1em;
+            width: calc(33% - 1em);
+            text-align: center;
+        }
+        
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        
+        @media (max-width: 768px) {
+            .card {
+                width: calc(48% - 1em);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+        
+
+        #resenas {
+            padding: 2em;
+            background-color: #f4f4f4;
+        }
+        
+        .resenas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5em;
+        }
+        
+        .reseña {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .carousel-img {
+            max-width: 50%; /* Reduce el tamaño al 50% */
+            margin: 0 auto; /* Centra la imagen */
+        }
+        
