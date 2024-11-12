@@ -27,24 +27,34 @@ p {
 /* estilos header*/
 
 header {
-    background-color: #babab8;
+    background-image: url(./imgs/pare.jpg);
     color: #fff;
     padding: 1em 0;
     text-align: center;
 }
 
+
+
 /* inicio */
 
 #inicio {
     padding: 2em;
-    background-color: #f9f9f9; /* Un gris más claro */
+    /* Un gris más claro */
     text-align: center;
     border-bottom: 3px solid #ccc;
+    border-left: 5px solid #f7ff03;
+    border-right: 5px solid #f7ff03;
+    background-image: url('./imgs/pare.jpg') ; 
+}
+
+#incio-nav {
+    background-color: #c6c4c400;
+
 }
 
 #inicio h2 {
     color: #0056b3;
-    font-family: 'Itim', cursive; /* Diferente tipografía */
+    font-family: 'Oswald', sans-serif; /* Diferente tipografía */
     margin-bottom: 1em;
 }
 
@@ -96,6 +106,18 @@ header {
     line-height: 1.6;
 }
 
+/*OFICINA*/
+#oficina p {
+    color: #444;
+    font-size: 1.15em;
+    margin-top: 1em;
+    line-height: 1.6;
+    padding: 2em;
+    background: linear-gradient(135deg, #f0f0f0, #d3e0ea);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007BFF;}
+
+
 
 /* Footer */
 
@@ -118,6 +140,12 @@ nav ul {
 nav {
     background: linear-gradient(to right, #f0f0f0, #d3d3d3);  /* Gradiente de gris claro */
     padding: 1em 0;  /* Espacio arriba y abajo del contenido */
+}
+
+#nav1{
+    height: 100px;
+    width: 50%;
+   
 }
 
 nav ul li {
@@ -213,6 +241,15 @@ button:hover {
         #productos {
             padding: 2em;
             background-color: #eaeaea;
+            border-left: 5px solid #f7ff03;
+            border-right: 5px solid #f7ff03;
+        }
+        
+        #productos h2 {
+            
+            color: #004085;
+            font-family: 'Oswald', sans-serif;
+            font-weight: bold;
         }
         
         .productos-container {
@@ -249,11 +286,42 @@ button:hover {
                 width: 100%;
             }
         }
-        
+
+        /* OFICINA */
+
+        #oficina { 
+            border-left: 5px solid #03ff03;
+            border-right: 5px solid #03ff03;;
+            padding: 2em;
+        }
+
+        #oficina h2 { 
+            color: #004085;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        /*Personal*/
+
+
+        #personal {
+            border-left: 5px solid #039603;
+            border-right: 5px solid #039603;;
+            padding: 2em;
+        }
+
+        #personal h2{
+            color: #004085;
+            font-family: 'Oswald', sans-serif;
+        }
 
         #resenas {
             padding: 2em;
             background-color: #f4f4f4;
+        }
+
+        #resenas h2 {
+            color: #004085;
+            font-family: 'Oswald', sans-serif;   
         }
         
         .resenas-grid {
@@ -270,8 +338,31 @@ button:hover {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         
+     
+
+        /* Estilos comunes para los carruseles */
         .carousel-img {
-            max-width: 50%; /* Reduce el tamaño al 50% */
-            margin: 0 auto; /* Centra la imagen */
+            width: 100%; /* Ajusta al 100% del contenedor */
+            height: 300px; /* Usa la altura de la imagen más baja */
+            object-fit: cover; /* Asegura que la imagen llene el contenedor manteniendo las proporciones */
         }
+        
+.carousel-inner {
+    width: 100%; /* Ajusta el ancho del contenedor del carrusel */
+    max-width: 800px; /* Tamaño máximo opcional para que ambos carruseles sean iguales */
+    margin: 0 auto; /* Centra el carrusel */
+}
+
+/* Estilo específico para el contenedor de "Nuestro Personal" */
+#carouselPersonal .carousel-item img {
+    max-width: 100%; /* Asegura que las imágenes dentro del carrusel ocupen el 100% del contenedor */
+    height: auto; /* Mantiene la proporción */
+}
+
+/* Estilo específico para el contenedor de "Nuestras Oficinas" */
+#carouselOficinas .carousel-item img {
+    max-width: 100%; /* Asegura que las imágenes dentro del carrusel ocupen el 100% del contenedor */
+    height: auto; /* Mantiene la proporción */
+}
+
         
