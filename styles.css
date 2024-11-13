@@ -56,6 +56,7 @@ header {
     color: #0056b3;
     font-family: 'Oswald', sans-serif; /* Diferente tipografía */
     margin-bottom: 1em;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #inicio p {
@@ -76,6 +77,7 @@ header {
     color: #004085;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 0.5em;
+    
 }
 
 #sobre-nosotros p {
@@ -83,6 +85,9 @@ header {
     color: #333;
     text-align: justify;
 }
+
+
+#div-dig { background-color: rgba(255, 255, 255, 0.5);}
 
 /* Servicios */
 #servicios {
@@ -128,32 +133,38 @@ footer {
     text-align: center;
     font-size: 0.9em; }
 
+    /*NAV*/
 
 
-nav ul {
+#nav-ul {
+    font-size: 0.9rem; /* Reduce el tamaño del texto */
+    padding: 10px; /* Reduce el espacio interno */
+    background-color: #f8f9fa; /* Color de fondo opcional */
+}
+
+#nav-ul ul {
     display: flex;
+    justify-content: space-around; /* Espacio entre los elementos */
     list-style-type: none;
-    padding: 1em;
-    justify-content: space-between;
 }
 
-nav {
-    background: linear-gradient(to right, #f0f0f0, #d3d3d3);  /* Gradiente de gris claro */
-    padding: 1em 0;  /* Espacio arriba y abajo del contenido */
+#nav-ul li {
+    margin: 0 5px; /* Espaciado entre los elementos */
 }
 
-#nav1{
-    height: 100px;
-    width: 50%;
-   
+#nav-ul a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    transition: color 0.3s;
 }
 
-nav ul li {
-    margin-right: 1em;           /* Añade espacio entre los elementos */
+#nav-ul a:hover {
+    color: #007bff; /* Color al pasar el mouse */
 }
 
-nav ul li a:hover {
-    color: #007BFF;              /* Cambia el color al pasar el cursor */
+ul { 
+    margin-bottom: 0;
 }
 
 .p-header { 
@@ -165,7 +176,7 @@ nav ul li a:hover {
             font-weight: bold;
             padding: 1em ;}
 
-            nav ul li a {
+nav ul li a {
                 color: #0f0ffe;
                 text-decoration: none;
             }
