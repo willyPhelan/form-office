@@ -24,17 +24,36 @@
     </header>
 
     <!-- Menú de navegación -->
-    <nav id="nav-ul">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>  <!-- href: dirección o URL a la que debe llevar el enlace -->
-            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#oficina">Nuestras Oficinas</a></li>
-            <li><a href="#personal">Nuestro Personal</a></li>
-            <li><a href="#form">Contacto</a></li>
-        </ul>
-    </nav>
+    
+
+    <nav id='nav-boot'class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#inicio"><img src="./imgs/logoemp.png" style="height: 30px;" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#oficina">Nuestras Oficinas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#personal">Nuestros Personal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#form">Contacto</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
 
     <!-- Contenido principal -->
     <main>
@@ -62,17 +81,17 @@
             <h2>Productos</h2>
             <div class="productos-container">
                 <div class="card">
-                    <img src="imgs/e-commerce.png" alt="Producto 1">
+                    <img id='img-grid' src="imgs/e-commerce.png" alt="Producto 1">
                     <h3>Paquete Funcionalidades Web</h3>
                     <p>Un paquete web que permite a los usuarios integrar pasarelas de pago, añadir seguridad con encriptación SSL, soportar múltiples monedas, configurar notificaciones y gestionar pagos recurrentes fácilmente.</p>
                 </div>
                 <div class="card">
-                    <img src="imgs/estrategias.png" alt="Producto 2">
+                    <img id='img-grid' src="imgs/estrategias.png" alt="Producto 2">
                     <h3>Gestiona tus envíos con nosotros</h3>
                     <p>Un paquete que facilita la gestión de envíos en e-commerce, integrando proveedores logísticos, seguimiento en tiempo real, tarifas automáticas y opciones de envío flexible, optimizando la experiencia del cliente.</p>
                 </div>
                 <div class="card">
-                    <img src="imgs/Pyme.jpg" alt="Producto 2">
+                    <img id='img-grid' src="imgs/Pyme.jpg" alt="Producto 2">
                     <h3>Paquete Gestión Online</h3>
                     <p>Un paquete integral para gestionar e-commerce online: incluye administración de inventario, procesamiento de pagos, gestión de pedidos, análisis de ventas, soporte de múltiples canales y herramientas de marketing.</p>
                 </div>
@@ -93,13 +112,13 @@
             <div id="carouselOficinas" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./imgs/ofi.jpg"  class="d-block carousel-img" alt="Oficina 1">
+                        <img id="img-ofi" src="./imgs/ofi.jpg"  class="d-block carousel-img" alt="Oficina 1">
                     </div>
                     <div class="carousel-item">
-                        <img src="./imgs/espacios-diafanos-mediante-cristaleras.jpg"  class="d-block carousel-img" alt="Oficina 2">
+                        <img id="img-ofi" src="./imgs/espacios-diafanos-mediante-cristaleras.jpg"  class="d-block carousel-img" alt="Oficina 2">
                     </div>
                     <div class="carousel-item">
-                        <img src="./imgs/oficinamoderna2.jpg" class="d-block carousel-img" alt="Oficina 3">
+                        <img id="img-ofi" src="./imgs/oficinamoderna2.jpg" class="d-block carousel-img" alt="Oficina 3">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselOficinas" data-bs-slide="prev">

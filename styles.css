@@ -136,30 +136,33 @@ footer {
     /*NAV*/
 
 
-#nav-ul {
+#nav-boot {
     font-size: 0.9rem; /* Reduce el tamaño del texto */
-    padding: 10px; /* Reduce el espacio interno */
+     /* Reduce el espacio interno */
     background-color: #f8f9fa; /* Color de fondo opcional */
 }
 
-#nav-ul ul {
+#nav-boot ul {
     display: flex;
-    justify-content: space-around; /* Espacio entre los elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
     list-style-type: none;
 }
 
 #nav-ul li {
-    margin: 0 5px; /* Espaciado entre los elementos */
+    margin: 0 5px;
+    /* Espaciado entre los elementos */
 }
 
-#nav-ul a {
+#nav-boot a {
     text-decoration: none;
-    color: #333;
-    padding: 5px;
+    color: #333333;
+    padding: 0px 50px;
     transition: color 0.3s;
 }
 
-#nav-ul a:hover {
+
+
+#nav-boot a:hover {
     color: #007bff; /* Color al pasar el mouse */
 }
 
@@ -181,7 +184,14 @@ nav ul li a {
                 text-decoration: none;
             }
 
+.nav-item li ul {padding-left: 10px;}
+
+.navbar-toggler{ color: white;}
+            
+
 /* Estilos de formularios */
+
+
 
 label {
     font-weight: bold;
@@ -246,8 +256,29 @@ button:hover {
             }
         }
         
+        @media (max-width: 768px) {
+            #nav-ul { display: none;}
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+              flex-direction: column;
+              display: none; /* Se oculta por defecto en pantallas pequeñas */
+              width: 100%;
+              background: linear-gradient(180deg, rgba(173, 216, 230, 0.7) 0%, rgba(255, 255, 255, 0.5) 100%);
+              font-family: "Oswald", serif;
+              font-optical-sizing: auto;
+              font-weight: 200;
+              font-style: normal;
+              padding: 0px;
+          
+            }}
 
         /*GRID*/
+
+        #img-grid{ 
+            height: 300px;
+        }
 
         #productos {
             padding: 2em;
@@ -311,6 +342,11 @@ button:hover {
             font-family: 'Oswald', sans-serif;
         }
 
+        #img-ofi{
+            height: 300px;
+        }
+
+        .carousel-inner{height: 450px;}
         /*Personal*/
 
 
