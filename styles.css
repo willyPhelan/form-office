@@ -29,7 +29,6 @@ p {
 header {
     background-image: url(./imgs/pare.jpg);
     color: #fff;
-    padding: 1em 0;
     text-align: center;
 }
 
@@ -139,8 +138,9 @@ footer {
 #nav-boot {
     font-size: 0.9rem; /* Reduce el tamaño del texto */
      /* Reduce el espacio interno */
-    background-color: #f8f9fa; /* Color de fondo opcional */
-}
+     background: linear-gradient(180deg, rgba(116, 44, 44, 0.8) 0%, rgba(240, 248, 255, 0.6)); /* Color de fondo opcional */
+    border-left: 5px solid #ff0000;
+    }
 
 #nav-boot ul {
     display: flex;
@@ -156,8 +156,9 @@ footer {
 #nav-boot a {
     text-decoration: none;
     color: #333333;
-    padding: 0px 50px;
+    padding: 0px 45px;
     transition: color 0.3s;
+    font-weight: bold;
 }
 
 
@@ -186,7 +187,16 @@ nav ul li a {
 
 .nav-item li ul {padding-left: 10px;}
 
-.navbar-toggler{ color: white;}
+.navbar-toggler { 
+    
+    color: linear-gradient(180deg, rgba(116, 44, 44, 0.8) 0%, rgba(240, 248, 255, 0.6));}
+
+.navbar-expand-lg  {
+    padding: 10px;
+    
+}
+
+#navbarNav {padding: 10px;}
             
 
 /* Estilos de formularios */
@@ -265,12 +275,12 @@ button:hover {
               flex-direction: column;
               display: none; /* Se oculta por defecto en pantallas pequeñas */
               width: 100%;
-              background: linear-gradient(180deg, rgba(173, 216, 230, 0.7) 0%, rgba(255, 255, 255, 0.5) 100%);
+              background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(173, 216, 230, 0.7) 100%);
               font-family: "Oswald", serif;
               font-optical-sizing: auto;
-              font-weight: 200;
+              font-weight: 200 bold;
               font-style: normal;
-              padding: 0px;
+              
           
             }}
 
