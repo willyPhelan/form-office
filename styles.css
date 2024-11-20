@@ -189,7 +189,7 @@ nav ul li a {
 
 .navbar-toggler { 
     
-    color: linear-gradient(180deg, rgba(116, 44, 44, 0.8) 0%, rgba(240, 248, 255, 0.6));}
+    color: linear-gradient(180deg, rgba(116, 44, 44, 0.8) 0%, rgba(240, 248, 255, 0.6)) 100%;}
 
 .navbar-expand-lg  {
     padding: 10px;
