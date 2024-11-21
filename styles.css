@@ -383,7 +383,14 @@ button:hover {
             .carousel-inner{
                 height: 190px;
                 width: 286px}
+                #img-ofi{ 
+                    width: 286px;
+                    height: 191px;
+                    object-fit: contain;
+                    
+                }
             }
+
         
 
         
