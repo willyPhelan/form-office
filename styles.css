@@ -107,6 +107,7 @@ header {
 #div-dig { background-color: rgba(255, 255, 255, 0.5);}
 
 /* Servicios */
+
 #servicios {
     padding: 2em;
     background: linear-gradient(135deg, #f0f0f0, #d3e0ea);
@@ -376,7 +377,9 @@ button:hover {
             height: 300px;
         }
 
-        .carousel-inner{height: 450px;}
+        .carousel-inner{height: 300px;}
+
+        
         /*Personal*/
 
 
@@ -386,7 +389,8 @@ button:hover {
             padding: 2em;
         }
 
-        #personal h2{
+       
+         #personal h2{
             color: #004085;
             font-family: 'Oswald', sans-serif;
         }
@@ -400,6 +404,8 @@ button:hover {
             background: linear-gradient(135deg, #f0f0f0, #d3e0ea);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-left: 5px solid #007BFF;}
+
+            /* Reseñas */
 
         #resenas {
             padding: 2em;
