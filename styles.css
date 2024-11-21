@@ -377,7 +377,14 @@ button:hover {
             height: 300px;
         }
 
-        .carousel-inner{height: 300px;}
+        .carousel-inner{height: 450px;}
+
+        @media (max-width: 768px) {
+            .carousel-inner{
+                height: 190px;
+                width: 286px}
+            }
+        
 
         
         /*Personal*/
