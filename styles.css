@@ -27,10 +27,17 @@ p {
 /* estilos header*/
 
 header {
-    background-image: url(./imgs/pare.jpg);
+    background-image: url(./imgs/pared.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
     color: #fff;
     text-align: center;
 }
+
+
+
 
 
 
@@ -44,6 +51,15 @@ header {
     border-left: 5px solid #f7ff03;
     border-right: 5px solid #f7ff03;
     background-image: url('./imgs/pare.jpg') ; 
+}
+
+@media (max-width: 768px) {
+    #inicio {
+        background-image: url(./imgs/pared.png);
+        background-size: cover;
+        
+        
+    }
 }
 
 #incio-nav {
@@ -69,7 +85,9 @@ header {
 #sobre-nosotros {
     padding: 2em;
     background-color: #e6f7ff; /* Azul claro */
-    border-left: 5px solid #007BFF; /* Barra decorativa */
+    border-left: 5px solid #007BFF;
+    border-right: 5px solid #007BFF;
+     /* Barra decorativa */
 }
 
 #sobre-nosotros h2 {
@@ -94,6 +112,7 @@ header {
     background: linear-gradient(135deg, #f0f0f0, #d3e0ea);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-left: 5px solid #007BFF;
+    border-right: 5px solid #007BFF;
 }
 
 #servicios h2 {
@@ -140,6 +159,7 @@ footer {
      /* Reduce el espacio interno */
      background: linear-gradient(180deg, rgba(116, 44, 44, 0.8) 0%, rgba(240, 248, 255, 0.6)); /* Color de fondo opcional */
     border-left: 5px solid #ff0000;
+    border-right: 5px solid #ff0000;
     }
 
 #nav-boot ul {
@@ -370,6 +390,16 @@ button:hover {
             color: #004085;
             font-family: 'Oswald', sans-serif;
         }
+
+         #equipo {
+            color: #444;
+            font-size: 1.15em;
+            margin-top: 1em;
+            line-height: 1.6;
+            padding: 2em;
+            background: linear-gradient(135deg, #f0f0f0, #d3e0ea);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #007BFF;}
 
         #resenas {
             padding: 2em;
